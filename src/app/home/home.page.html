@@ -1,14 +1,48 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Ionic Blank
+      Display 7 Segmentos
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+<ion-content no-padding>
+  <ion-grid no-padding>
+    <ion-row no-padding>
+      <ion-col no-padding size-xs="12" size-sm="6">
+        <ion-card no-padding>
+          <ion-card-header color="light">
+            <ion-card-subtitle>Controles</ion-card-subtitle>
+          </ion-card-header>          
+          <ion-card-content no-padding>
+            <ion-list>
+              <ion-item *ngFor="let elem of checkboxes">
+                <ion-label>{{elem.Nombre}}</ion-label>
+                <ion-checkbox color="primary" [(ngModel)]="elem.isChecked" (ionChange)="actualizarDisplay()"></ion-checkbox>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+
+        </ion-card>
+      </ion-col>
+      <ion-col no-padding size-xs="12" size-sm="6">
+        <ion-card no-padding>
+          <ion-card-header color="light">
+            <ion-card-subtitle>Display</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content no-padding>
+            <div class="display">
+              <div class="segment" [ngClass]="s1? 's1': 'ocultar'"></div>
+              <div class="segment" [ngClass]="s3? 's3': 'ocultar'"></div>
+              <div class="segment" [ngClass]="s6? 's6': 'ocultar'"></div>
+              <div class="segment" [ngClass]="s7? 's7': 'ocultar'"></div>
+              <div class="segment" [ngClass]="s5? 's5': 'ocultar'"></div>
+              <div class="segment" [ngClass]="s2? 's2': 'ocultar'"></div>
+              <div class="segment" [ngClass]="s4? 's4': 'ocultar'"></div>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
