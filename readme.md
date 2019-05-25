@@ -48,4 +48,14 @@ Sobre la tabla construida anteriormente, se escribió informalmente el código q
 
 * s7: e1' e2' e3' e4' + e1' e2' e3 e4' + e1' e2' e3 e4 + e1' e2 e3' e4 + e1' e2 e3 e4' + e1 e2' e3' e4' + e1 e2' e3 e4' + e1 e2' e3 e4 + e1 e2 e3' e4' + e1 e2 e3' e4 + e1 e2 e3 e4' + e1 e2 e3 e4
 
+### Se minimizó la función utilizando mapas de Karnaugh
+
+* s1: e3 + e2' e4' + e1 + e2 e4
+* s2: e3' e4' + e1 + e2 e3' + e2 e4'
+* s3: e2' e3' + e2' e3' e4' + e1' e2' + e1' e3 e4
+* s4: e2 e3' + e2' e3 + e3 e4' + e1
+* s5: e2' e4' + e3 e4' + e1 e3 + e1 e2
+* s6: e1' e2 + e1' e4 + e2 e3'
+* s7: e2 e3' e4 + e2' e3 + e3 e4' + e2' e4' + e1 e2
+
 ## Etapa 3: Implementación en Ionic 4 las condiciones de la etapa 2.
