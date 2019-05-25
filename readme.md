@@ -62,7 +62,9 @@ Sobre la tabla construida anteriormente, se escribió informalmente el código q
 
 El proyecto se implementó usando las funciones minimizadas utilizando el Framework [Ionic 4](https://ionicframework.com/) y se subió a [netlify](https://www.netlify.com/) para mostrar la aplicación corriendo online.
 
-[Link del proyecto online](https://display7segmentos.netlify.com)
+* [Link del proyecto online](https://display7segmentos.netlify.com)
+
+* [Archivo en donde se implementaron las funciones](https://github.com/gutierreznestor/display7segmentos/blob/master/src/app/home/home.page.ts)
 
 ---
 
