@@ -48,7 +48,7 @@ Sobre la tabla construida anteriormente, se escribió informalmente el código q
 
 * s7: e1' e2' e3' e4' + e1' e2' e3 e4' + e1' e2' e3 e4 + e1' e2 e3' e4 + e1' e2 e3 e4' + e1 e2' e3' e4' + e1 e2' e3 e4' + e1 e2' e3 e4 + e1 e2 e3' e4' + e1 e2 e3' e4 + e1 e2 e3 e4' + e1 e2 e3 e4
 
-### Se minimizó la función utilizando mapas de Karnaugh
+### Para simplificar la función se minimizó utilizando mapas de Karnaugh
 
 * s1: e3 + e2' e4' + e1 + e2 e4
 * s2: e3' e4' + e1 + e2 e3' + e2 e4'
@@ -59,3 +59,21 @@ Sobre la tabla construida anteriormente, se escribió informalmente el código q
 * s7: e2 e3' e4 + e2' e3 + e3 e4' + e2' e4' + e1 e2
 
 ## Etapa 3: Implementación en Ionic 4 las condiciones de la etapa 2.
+
+El proyecto se implementó usando las funciones minimizadas utilizando el Framework [Ionic 4](https://ionicframework.com/) y se subió a [netlify](https://www.netlify.com/) para mostrar la aplicación corriendo online.
+
+[Link del proyecto online](https://display7segmentos.netlify.com)
+
+---
+
+Autor: Gabriel Gutierrez
+
+Profesor: Mariano Fritz
+
+Fecha de entrega: 24/05/2019
+
+Asignatura: Álgebra
+
+Carrera: Analista de Sistemas
+
+[Instituto Superior Juan XXIII](https://www.juan23.edu.ar/)
